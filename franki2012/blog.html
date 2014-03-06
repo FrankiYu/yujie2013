@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>Moose Frankenstein  |  于杰的个人主页  |  日志</title>
+<link rel="stylesheet" type="text/css" href="css/css.css" media="screen"/>
+</head>
+<body class="widescreen">
+  <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+  <script type="text/javascript" src="js/randcolor.js"></script>
+  <script type="text/javascript" src="js/calendar.js"></script>
+	<div id="container" style="overflow-x: visible; overflow-y: visible;height: 950px;">
+		<header>
+			<h1>Moose Frankenstein</h1>
+		</header>
+    <nav>
+      <ul class="clear">
+        <li><a href="index.html">主页</a></li>
+        <li  class="first"><a href="blog.html">日志</a></li>
+        <li><a href="my_photo.html">图片墙</a></li>
+        <li><a href="my_video.html">视频墙</a></li>
+        <li>
+          <span class="Darrow"></span>
+          <a href="rss.html">关注和订阅</a>
+          <dl>
+            <dt><span class="arrow"></span></dt>
+            <dd><a href="rss.html#goto_sinaweibo">新浪微博</a></dd>
+            <dd><a href="rss.html#goto_qqweibo">腾讯微博</a></dd>
+            <dd><a href="rss.html#goto_rss">RSS</a></dd>
+          </dl>
+        </li>
+        <li><a href="timeline.html">时光轴</a></li>
+        <li class="last"><a href="aboutme.html">关于我</a></li>
+        </ul>
+    </nav>
+    <form method="get" id="search">
+      <input name="q" type="text" size="40" value="在此输入关键词..." onfocus="if (this.value == '在此输入关键词...') {this.value = '';}" onblur="if (this.value == '') {this.value = '在此输入关键词...';}" />
+    </form>
+    <div class="headend">
+      <div class="signline">
+        <span>您的位置：</span>
+        <a href="blog.html">日志</a>
+      </div>
+      <div class="share">
+        <ul class="share_ul">
+          <a title="分享到新浪微博" href="#"><li class="sprite-1"></li></a>
+          <a title="分享到人人网" href="#"><li class="sprite-2"></li></a>
+          <a title="分享到腾讯微博" href="#"><li class="sprite-3"></li></a>
+          <a title="分享到百度空间" href="#"><li class="sprite-4"></li></a>
+          <a title="分享到twitter" href="#"><li class="sprite-5"></li></a>
+          <a title="分享到facebook" href="#"><li class="sprite-6"></li></a>
+          <a title="分享到google+" href="#"><li class="sprite-7"></li></a>
+          <a title="分享到雅虎" href="#"><li class="sprite-8"></li></a>
+          <a title="分享到QQ空间" href="#"><li class="sprite-9"></li></a>
+        </ul>
+      </div>
+      <div class="bloglist">
+        <div class="bloglist_content">
+          <ul class="list_ul">
+            <li><span class="zhiding">[置顶]</span><span class="blog_cat">【旅行日志】</span><a href="blog_detail.html">去外婆家！</a><span class="rec" title="评论:27/阅读:195">(27/195)</span><span class="date">2013-1-23</span></li>
+            <li><span class="zhiding">[置顶]</span><span class="blog_cat">【旅行日志】</span><a href="#">今天坐火车回家</a><span class="rec" title="评论:38/阅读:65">(38/65)</span><span class="date">2013-1-22</span></li>
+            <li><span class="blog_cat">【影评】</span><a href="#">看电影《一代宗师》</a><span class="rec" title="评论:12/阅读:67">(12/67)</span><span class="date">2013-1-20</span></li>
+            <li><span class="blog_cat">【念想】</span><a href="#">2012，据说是世界末日</a><span class="rec" title="评论:378/阅读:401">(378/1401)</span><span class="date">2013-1-18</span></li>
+            <li><span class="blog_cat">【情感】</span><a href="#">那些看起来毫不在意的人</a><span class="rec" title="评论:9/阅读:18">(9/18)</span><span class="date">2013-1-16</span></li>
+            <li><span class="blog_cat">【情感】</span><a href="#">一半多，多一半。</a><span class="rec" title="评论:10/阅读:33">(10/33)</span><span class="date">2012-12-21</span></li>
+            <li><span class="blog_cat">【资料收录】</span><a href="#">玩转淘宝，月入两万。</a><span class="rec" title="评论:2/阅读:4">(2/4)</span><span class="date">2012-11-11</span></li>
+            <li><span class="blog_cat">【学习资料】</span><a href="#">整理：AE表达式</a><span class="rec" title="评论:0/阅读:1">(0/1)</span><span class="date">2012-10-1</span></li>
+            <li><span class="blog_cat">【回忆过往】</span><a href="#">我就这样20岁了？</a><span class="rec" title="评论:110/阅读:365">(110/365)</span><span class="date">2012-9-6</span></li>
+            <li><span class="blog_cat">【个人点评】</span><a href="#">浅谈云游戏平台</a><span class="rec" title="评论:37/阅读:99">(37/99)</span><span class="date">2012-8-31</span></li>
+          </ul>
+        </div>
+      </div><!--=end of bloglist=-->
+      <div id="roll">
+        <div title="回到顶部" id="roll_top" onclick="$('body,html').animate({scrollTop:0},1000);"></div>
+        <div title="刷新当前页面" id="ct" onclick="location.reload();"></div>
+        <div title="转到底部" id="fall" onclick="$('body,html').animate({scrollTop:$('footer').offset().top}, 1000);" ></div>
+      </div>
+      <div class="blog_menu">
+        <div class="blog_catlist">
+          <div class="title_cat">
+            <h3>日志分类</h3>
+          </div>
+          <div class="cat_menu">
+            <ul class="cat_menu_ul">
+              <li><a href="blog_detail.html">全部日志</a><span class="count">(276)</span></li>
+              <li><a href="blog_detail.html">默认</a><span class="count">(51)</span></li>
+              <li><a href="blog_detail.html">旅行日志</a><span class="count">(23)</span></li>
+              <li><a href="blog_detail.html">资料收录</a><span class="count">(219)</span></li>
+              <li><a href="blog_detail.html">情感</a><span class="count">(87)</span></li>
+              <li><a href="blog_detail.html">影评</a><span class="count">(402)</span></li>
+              <li><a href="blog_detail.html">其它</a><span class="count">(38)</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="Calendar"> 
+          <div class="title_cat">
+            <h3>时间分类</h3>
+          </div>
+          <div class="icalendar">
+            <div class="cal_btn">
+              <div id="idCalendarPre"><<</div> 
+              <div id="idCalendarNext">>></div> 
+              <span id="idCalendarYear">2008</span>年 <span id="idCalendarMonth">8</span>月 
+            </div>
+            <table cellspacing="0"> 
+            <thead> 
+              <tr> 
+              <td>日</td>
+              <td>一</td>
+              <td>二</td>
+              <td>三</td>
+              <td>四</td> 
+              <td>五</td>
+              <td>六</td>
+              </tr>
+            </thead> 
+            <tbody id="idCalendar"> 
+            </tbody> 
+            </table>
+          </div>
+        </div><!--=end of Calendar=-->
+      </div><!--=end of blog_catlist=-->
+    </div><!--=end of headend=-->
+    <div class="pages">
+      <ul class="pager">
+        <li class="pager-first first">
+          <a class="active" title="到第一页" href="#">« 首页 </a>
+        </li>
+        <li class="pager-previous">
+          <a class="active" title="返回上一个页面" href="#">‹ 上一页 </a>
+        </li>
+        <li class="pager-item">
+          <a class="active" title="到第1页" href="#">1</a>
+        </li>
+        <li class="pager-current" >2</li>
+        <li class="pager-item">
+          <a class="active" title="到第2页" href="#">3</a>
+        </li>
+        <li class="pager-item">
+          <a class="active" title="到第3页" href="#">4</a>
+        </li>
+        <li class="pager-item">
+          <a class="active" title="到第4页" href="#">5</a>
+        </li>
+        <li class="pager-item">
+          <a class="active" title="到第5页" href="#">6</a>
+        </li>
+        <li class="pager-next">
+          <a class="active" title="去下一个页面" href="#">下一页 › </a>
+        </li>
+        <li class="pager-last last">
+          <a class="active" title="到最后一页" href="#">尾页 » </a>
+        </li>
+      </ul>
+    </div>    
+  </div><!--=end of container=-->
+  <footer>
+    <div class="footer_body">
+      <div class="logo">
+        <a href="#"><h1>Moose Frankenstein</h1></a>
+      </div>
+      <div class="footer_content">
+        <a target="_blank" href="#">于杰的个人主页</a> 网站  |  基于 
+        <a target="_blank" href="http://www.html5cn.org/">HTML5</a>  +
+        <a href="http://www.css3-html5.com/">CSS3</a> 技术构建  |  友情链接
+        <a target="_blank" href="http://www.hunaneu.com">湖南涉外经济学院</a>
+      </div>
+    </div>
+  </footer>
+<script language="JavaScript">
+var cale = new Calendar("idCalendar", {
+    onSelectDay: function(o) {
+        o.className = "onSelect";
+    },
+    onToday: function(o) {
+        o.className = "onToday";
+    },
+    onFinish: function() {
+        $("idCalendarYear").innerHTML = this.Year;
+        $("idCalendarMonth").innerHTML = this.Month;
+    }
+});
+$("idCalendarPre").onclick = function() {
+    cale.PreMonth();
+}
+$("idCalendarNext").onclick = function() {
+    cale.NextMonth();
+}
+</script>
+</body>
+</html>

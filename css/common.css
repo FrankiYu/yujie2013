@@ -221,6 +221,7 @@ a.carousel-control:hover,
 a.carousel-control:focus,
 a.carousel-control {
 	color: #FFF;
+	margin-top:10px; 
 }
 .screenshots {
 	margin-top: 3px;
@@ -1063,4 +1064,7 @@ only screen and (                min-resolution: 2dppx) {
 ::-webkit-selection {
     background:#d3d3d3; 
     color:#555;
+}
+article>a{
+	display: none;
 }

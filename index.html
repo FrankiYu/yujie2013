@@ -50,9 +50,15 @@
     <link rel="stylesheet" href="css/bootstrap-responsive.min.css"></head>
     <link rel="stylesheet" href="css/common.css">
     <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script>
+        $.ajaxSetup ({
+            cache: false
+        });
+    </script>
     <!--[if lt IE 9]>
     <script type="text/javascript" src="js/html5.js"></script> 
     <![endif]-->
+
 <body data-spy="scroll" data-target=".navbar" onload="completed();" ontouchstart="" >
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="navbar-inner">
@@ -136,8 +142,8 @@
                 </div>
             </div>
         </section>
-    
-        <div id="loading" class="text-center" style="display: none;">
+
+        <div id="loading" class="text-center">
             <img class="spinner" src="img/spinner.gif">
             <span>加载中</span>
         </div>
@@ -145,7 +151,7 @@
         <!--  关于我 About me  -->
 
         <section id="photography" class="row">
-            <div class="span12 panel" style="display: block;">
+            <div class="span12 panel">
                 <div class="row">
                     <div class="span8">
                         <div id="photograph" class="carousel slide">
@@ -163,50 +169,50 @@
                             </ol>
                             <!-- Carousel items -->
                             <div class="carousel-inner">
-                                <div class="item">
-                                    <a href="javascript:;" title="在 Camarts™ 中浏览" target="_blank">
+                                <div class="active item">
+                                    <a href="javascript:;" target="_blank">
                                         <img src="img/carousel/carousel-01.jpg"></a>
                                 </div>
                                 <div class="item">
-                                    <a href="javascript:;" title="在 Camarts™ 中浏览" target="_blank">
+                                    <a href="javascript:;" target="_blank">
                                         <img src="img/carousel/carousel-02.jpg"></a>
                                 </div>
                                 <div class="item">
-                                    <a href="javascript:;" title="在 Camarts™ 中浏览" target="_blank">
+                                    <a href="javascript:;" target="_blank">
                                         <img src="img/carousel/carousel-03.jpg"></a>
                                 </div>
                                 <div class="item">
-                                    <a href="javascript:;" title="在 Camarts™ 中浏览" target="_blank">
+                                    <a href="javascript:;" target="_blank">
                                         <img src="img/carousel/carousel-04.jpg"></a>
                                 </div>
                                 <div class="item">
-                                    <a href="javascript:;" title="在 Camarts™ 中浏览" target="_blank">
+                                    <a href="javascript:;" target="_blank">
                                         <img src="img/carousel/carousel-05.jpg"></a>
                                 </div>
-                                <div class="item active left">
-                                    <a href="javascript:;" title="在 Camarts™ 中浏览" target="_blank">
+                                <div class="item">
+                                    <a href="javascript:;" target="_blank">
                                         <img src="img/carousel/carousel-06.jpg"></a>
                                 </div>
-                                <div class="item next left">
-                                    <a href="javascript:;" title="在 Camarts™ 中浏览" target="_blank">
+                                <div class="item">
+                                    <a href="javascript:;" target="_blank">
                                         <img src="img/carousel/carousel-07.jpg"></a>
                                 </div>
                                 <div class="item">
-                                    <a href="javascript:;" title="在 Camarts™ 中浏览" target="_blank">
+                                    <a href="javascript:;" target="_blank">
                                         <img src="img/carousel/carousel-08.jpg"></a>
                                 </div>
                                 <div class="item">
-                                    <a href="javascript:;" title="在 Camarts™ 中浏览" target="_blank">
+                                    <a href="javascript:;" target="_blank">
                                         <img src="img/carousel/carousel-09.jpg"></a>
                                 </div>
                                 <div class="item">
-                                    <a href="javascript:;" title="在 Camarts™ 中浏览" target="_blank">
+                                    <a href="javascript:;" target="_blank">
                                         <img src="img/carousel/carousel-10.jpg"></a>
                                 </div>
                             </div>
 
-                            <a class="carousel-control left" href="#photograph" data-slide="prev">‹</a>
-                            <a class="carousel-control right" href="#photograph" data-slide="next">›</a>
+                            <a class="left carousel-control" href="#photograph" data-slide="prev">‹</a>
+                            <a class="right carousel-control" href="#photograph" data-slide="next">›</a>
                         </div>
                     </div>
 
@@ -294,7 +300,7 @@
                                 我对欧美电影的热爱近乎狂热，迄今观摩超2500部，是一名真正的影评玩家。从初中时代，就开始沉迷欧美、印度电影。看这些电影的时候就好像享受了一顿思想、视觉的盛宴。反观国内电影和导演，我可以说脏话吗？不可以我就没什么好说的了。
                             </p>
                             <br>
-                            <a class="visible-desktop" href="http://live.qq.com/qzmovie/onesmovie.html?owner=465644390" title="貌似非QQ好友不能查看" target="_blank">查看我的影评 »</a>
+                            <a class="visible-desktop" href="http://user.qzone.qq.com/465644390/2" target="_blank">查看我的影评 »</a>
                         </div>
                     </div>
                 </div>
@@ -379,13 +385,13 @@
                     <p>这个网站每年都会被彻底地重新设计和制作一次，以集中展示我的最新设计理念和在过去一年中所学到的 Web 开发知识。</p>
                     <p>
                         今年已经是第三个版本，采用栅格化
-                        <a href="http://www.responsinator.com/?url=http://shengsa.hnwish.com/project/franki2013" target="_blank" title="看看这个网站在不同分辨率下的表现">响应式</a>
+                        <a href="http://www.responsinator.com/?url=http://www.123500.net/franki2013/index.html" target="_blank" title="看看这个网站在不同分辨率下的表现">响应式</a>
                         布局，应用了多种实验性 CSS 元素和大量动画效果，
                     </p>
                     <p>
                         并支持 Retina 高清屏幕和 iOS Web App，还有基于 HTML 5 的离线缓存等技术。
                     </p>
-                    <a href="http://www.responsinator.com/?url=http://shengsa.hnwish.com/project/franki2013" target="_blank" title="看看这个网站在不同分辨率下的表现" alt="响应式布局">
+                    <a href="http://www.responsinator.com/?url=http://www.123500.net/franki2013/index.html" target="_blank" title="看看这个网站在不同分辨率下的表现" alt="响应式布局">
                         <img class="img-responsive" src="img/responsive.png" alt="响应式设计"></a>
                     <p>因鄙视落后浏览器，无法保证古老浏览器的兼容性，建议使用最新版本的 Chrome 或 Mac 版 Safari 浏览。</p>
                     <p>所有版本已经在下方列出，有兴趣的可以看看我在这方面的成长之路。</p>
@@ -405,7 +411,7 @@
                             </li>
 
                             <li class="span2">
-                                <a class="thumbnail" href="../franki2012/index.html" target="_blank">
+                                <a class="thumbnail" href="franki2012/index.html" target="_blank">
                                     <img src="img/2012.jpg" data-src="img/2012.jpg" alt="">
                                     <h3>2012</h3>
                                     <p>
@@ -435,10 +441,11 @@
                 </div>
             </div>
         </section>
-
+	<script src="http://s23.cnzz.com/z_stat.php?id=1000290855&web_id=1000290855" language="JavaScript"></script>
     </article>
     <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
     <script type="text/javascript" src="js/home.js"></script>
+
 </body>
 </html>
