@@ -1,0 +1,331 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>Moose Frankenstein  |  于杰的个人主页  |  时光轴</title>
+<link rel="stylesheet" type="text/css" href="css/css.css" media="screen"/>
+</head>
+<body class="widescreen">
+  <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+  <script type="text/javascript" src="js/jquery.timelinr-0.9.51.js"></script> 
+  <script type="text/javascript" src="js/randcolor.js"></script>
+	<div id="container" style="overflow-x: visible; overflow-y: visible;height:900px;">
+		<header>
+			<h1>Moose Frankenstein</h1>
+		</header>
+    <nav>
+      <ul class="clear">
+        <li><a href="index.html">主页</a></li>
+        <li><a href="blog.html">日志</a></li>
+        <li><a href="my_photo.html">图片墙</a></li>
+        <li><a href="my_video.html">视频墙</a></li>
+        <li>
+          <span class="Darrow"></span>
+          <a href="rss.html">关注和订阅</a>
+          <dl>
+            <dt><span class="arrow"></span></dt>
+            <dd><a href="rss.html#goto_sinaweibo">新浪微博</a></dd>
+            <dd><a href="rss.html#goto_qqweibo">腾讯微博</a></dd>
+            <dd><a href="rss.html#goto_rss">RSS</a></dd>
+          </dl>
+        </li>
+        <li  class="first"><a href="timeline.html">时光轴</a></li>
+        <li class="last"><a href="aboutme.html">关于我</a></li>
+        </ul>
+    </nav>
+    <form method="get" id="search">
+      <input name="q" type="text" size="40" value="在此输入关键词..." onfocus="if (this.value == '在此输入关键词...') {this.value = '';}" onblur="if (this.value == '') {this.value = '在此输入关键词...';}" />
+    </form>
+    <div class="headend">
+      <div class="signline">
+        <span>您的位置：</span>
+        <a href="rss.html">时光轴</a>
+      </div>
+      <div class="share">
+        <ul class="share_ul">
+          <a title="分享到新浪微博" href="#"><li class="sprite-1"></li></a>
+          <a title="分享到人人网" href="#"><li class="sprite-2"></li></a>
+          <a title="分享到腾讯微博" href="#"><li class="sprite-3"></li></a>
+          <a title="分享到百度空间" href="#"><li class="sprite-4"></li></a>
+          <a title="分享到twitter" href="#"><li class="sprite-5"></li></a>
+          <a title="分享到facebook" href="#"><li class="sprite-6"></li></a>
+          <a title="分享到google+" href="#"><li class="sprite-7"></li></a>
+          <a title="分享到雅虎" href="#"><li class="sprite-8"></li></a>
+          <a title="分享到QQ空间" href="#"><li class="sprite-9"></li></a>
+        </ul>
+      </div>
+      <div class="timeline_content">
+  <script>
+    $(function(){
+      $().timelinr({
+        orientation:  'vertical',
+        issuesSpeed:  300,
+        datesSpeed:   100,
+        arrowKeys:    'true',
+        startAt:    1
+      })
+    });
+  </script>
+
+</head>
+
+<body>
+  
+  <div id="timeline">
+    <ul id="dates">
+      <li><a href="#2013" class="selected">2013</a></li>
+      <li><a href="#2012">2012</a></li>
+      <li><a href="#2011">2011</a></li>
+      <li><a href="#2010">2010</a></li>
+      <li><a href="#2009">2009</a></li>
+      <li><a href="#2008">2008</a></li>
+      <li><a href="#2007">2007</a></li>
+      <li><a href="#2006">2006</a></li>
+      <li><a href="#2005">2005</a></li>
+      <li><a href="#2004">2004</a></li>
+      <li><a href="#2003">2003</a></li>
+      <li><a href="#2002">2002</a></li>
+      <li><a href="#2001">2001</a></li>
+      <li><a href="#2000">2000</a></li>
+      <li><a href="#1999">1999</a></li>
+      <li><a href="#1998">1998</a></li>
+      <li><a href="#1997">1997</a></li>
+      <li><a href="#1996">1996</a></li>
+      <li><a href="#1995">1995</a></li>
+      <li><a href="#1994">1994</a></li>
+      <li><a href="#1993">1993</a></li>
+      <li><a href="#1992">1992</a></li>
+      <li><a href="#1991">1991</a></li>
+    </ul>
+    <ul id="issues">
+      <li id="2013" class="selected">
+        <img src="images/2013.gif" width="488" height="324" />
+        <h1>2013.6</h1>
+        <p>大学四年，时光如梭。即将毕业，各自离别，踏上社会。</p>
+      </li>
+      <li id="2012">
+        <img src="images/2012.gif" width="488" height="324" />
+        <h1>2012.6</h1>
+        <p>怀着十分复杂的心情跟随着班上的同学来到了湖南省软件评测中心。在这里，既有紧张的项目实训和严肃的报告讲座，又有轻松的游戏测试和愉快的班级活动。来到这里之前是没有任何的项目经验的，所以感觉到在学校没学到多少东西，在来实习之前，我在网上查询了许多测试行业的相关要求，了解了作为一个测试人员必须耐心，细心和平和的心态，测试人员的目标是尽可能早一些找出软件缺陷，提高产品的质量，降低维护的成本，尽可能的达到客户的需求。</p>
+      </li>
+      <li id="2011">
+        <img src="images/2011.gif" width="488" height="324" />
+        <h1>2011.11</h1>
+        <p>全班包车去韶山旅游</p>
+      </li>
+      <li id="2010">
+        <img src="images/2010.gif" width="488" height="324" />
+        <h1>2010.4</h1>
+        <p>全班有岳麓山，这是我们寝室的集体照</p>
+      </li>
+      <li id="2009">
+        <img src="images/2009.gif" width="488" height="324" />
+        <h1>2009.3</h1>
+        <p>十余年寒窗苦读，残酷的高考</p>
+      </li>
+      <li id="2008">
+        <img src="images/2008.gif" width="488" height="324" />
+        <h1>2008.12</h1>
+        <p>如果说“万里雪飘”的景色也曾光临，那么“千里冰封”的情景，在湖湘大多数人的记忆里绝对是陌生的。从12日晚开始，冰冻封住了全省山区和长沙、湘潭、益阳、娄底、邵阳、怀化等地；至28日，全省冰冻过程持续时间已达16天，48个县市经历了当地有气象记录以来最长的连续冰冻日期。据气象记载，尚在持续的此次冰冻，对全省的影响范围位居1951年以来的第一位。</p>
+      </li>
+      <li id="2007">
+        <img src="images/2007.gif" width="488" height="324" />
+        <h1>2007.9</h1>
+        <p>高二</p>
+      </li>
+      <li id="2006">
+        <img src="images/2007.gif" width="488" height="324" />
+        <h1>2006.9</h1>
+        <p>高一</p>
+      </li>
+      <li id="2005">
+        <img src="images/2007.gif" width="488" height="324" />
+        <h1>2005.9</h1>
+        <p>初三</p>
+      </li>
+      <li id="2004">
+        <img src="images/2007.gif" width="488" height="324" />
+        <h1>2004.9</h1>
+        <p>初二</p>
+      </li>
+      <li id="2003">
+        <img src="images/2007.gif" width="488" height="324" />
+        <h1>2003.9</h1>
+        <p>初一</p>
+      </li>
+      <li id="2002">
+        <img src="images/2007.gif" width="488" height="324" />
+        <h1>2002.8</h1>
+        <p>十一岁</p>
+      </li>
+      <li id="2001">
+        <img src="images/2007.gif" width="488" height="324" />
+        <h1>2001.8</h1>
+        <p>十岁</p>
+      </li>
+      <li id="2000">
+        <img src="images/2007.gif" width="488" height="324" />
+        <h1>2000.8</h1>
+        <p>九岁</p>
+      </li>
+      <li id="1999">
+        <img src="images/2007.gif" width="488" height="324" />
+        <h1>1999.8</h1>
+        <p>八岁</p>
+      </li>
+      <li id="1998">
+        <img src="images/2007.gif" width="488" height="324" />
+        <h1>1998.8</h1>
+        <p>七岁</p>
+      </li>
+      <li id="1997">
+        <img src="images/2007.gif" width="488" height="324" />
+        <h1>1997.8</h1>
+        <p>六岁</p>
+      </li>
+      <li id="1996">
+        <img src="images/2007.gif" width="488" height="324" />
+        <h1>1996.8</h1>
+        <p>五岁</p>
+      </li>
+      <li id="1995">
+        <img src="images/2007.gif" width="488" height="324" />
+        <h1>1995.8</h1>
+        <p>四岁</p>
+      </li>
+      <li id="1994">
+        <img src="images/2007.gif" width="488" height="324" />
+        <h1>1994.8</h1>
+        <p>三岁</p>
+      </li>
+      <li id="1993">
+        <img src="images/2007.gif" width="488" height="324" />
+        <h1>1993.8</h1>
+        <p>二岁</p>
+      </li>
+      <li id="1992">
+        <img src="images/2007.gif" width="488" height="324" />
+        <h1>1992.8</h1>
+        <p>一岁</p>
+      </li>
+      <li id="1991">
+        <img src="images/2007.gif" width="488" height="324" />
+        <h1>1991.8</h1>
+        <p>出生</p>
+      </li>
+    </ul>
+  </div>
+
+<!-- ===========================================================================
+THIS ARE MY STATS PLEASE REMOVE IF USING THIS CODE IN YOUR OWN DEVELOPMENT 
+=========================================================================== -->
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-79823-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+  <script type="text/javascript">
+  function woopraReady(tracker) {
+      tracker.setDomain('csslab.cl');
+      tracker.setIdleTimeout(300000);
+      tracker.track();
+      return false;
+  }
+  (function() {
+      var wsc = document.createElement('script');
+      wsc.src = document.location.protocol+'//static.woopra.com/js/woopra.js';
+      wsc.type = 'text/javascript';
+      wsc.async = true;
+      var ssc = document.getElementsByTagName('script')[0];
+      ssc.parentNode.insertBefore(wsc, ssc);
+  })();
+  </script>
+<!-- ===========================================================================
+END MY STATS 
+=========================================================================== -->
+
+      </div>
+      <div id="roll">
+        <div title="回到顶部" id="roll_top" onclick="$('body,html').animate({scrollTop:0},1000);"></div>
+        <div title="刷新当前页面" id="ct" onclick="location.reload();"></div>
+        <div title="转到底部" id="fall" onclick="$('body,html').animate({scrollTop:$('footer').offset().top}, 1000);" ></div>
+      </div>
+    </div><!--=end of headend=-->
+          <div class="knowme">
+        <div class="lookme">
+          <div class="my_photo">
+            <a href="#"><img class="changeme" src="images/me1.gif" /><img src="images/me2.gif" /></a>
+          </div>
+          <div class="intro_me">
+            <p><span>姓名：</span>于杰</p>
+            <p><span>英文名：</span>Moose Frankenstein</p>
+            <p><span>生日：</span>1991年8月30日</p>
+            <p><span>毕业院校：</span>湖南涉外经济学院</p>
+            <p style="text-align:left;color:#000;margin-top:10px;；">非典型性工科文艺男，伪设计师，伪程序员。专注于移动互联网、Web前端开发、用户体验、Web标准、UI设计。混得比较失败，据说稍微有那么点艺术细胞，但后来被埋没了。是一个比标准的懒人更懒那么一点的人，从小就喜欢一切与电脑、网络有关的东东，估计除了一直觉得这些高科技很Cool之外，就是网络、软件等能让我可以更懒了。</p>
+            <a class="morebtn" href="aboutme.html" style="text-align:center;text-indent: 0em;">有点意思？了解更多...</a>
+          </div>
+        </div>
+      </div><!--=end of knowme=-->
+  </div><!--=end of container=-->
+  <footer>
+    <div class="footer_body">
+      <div class="logo">
+        <a href="#"><h1>Moose Frankenstein</h1></a>
+      </div>
+      <div class="footer_content">
+        <a target="_blank" href="#">于杰的个人主页</a> 网站  |  基于 
+        <a target="_blank" href="http://www.html5cn.org/">HTML5</a>  +
+        <a href="http://www.css3-html5.com/">CSS3</a> 技术构建  |  友情链接
+        <a target="_blank" href="http://www.hunaneu.com">湖南涉外经济学院</a>
+      </div>
+    </div>
+  </footer>
+    <script>
+    $(function(){
+      $().timelinr({
+        orientation:  'vertical',
+        issuesSpeed:  300,
+        datesSpeed:   100,
+        arrowKeys:    'true',
+        startAt:    3
+      })
+    });
+  </script>
+<!-- ===========================================================================
+THIS ARE MY STATS PLEASE REMOVE IF USING THIS CODE IN YOUR OWN DEVELOPMENT 
+=========================================================================== -->
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-79823-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+  <script type="text/javascript">
+  function woopraReady(tracker) {
+      tracker.setDomain('csslab.cl');
+      tracker.setIdleTimeout(300000);
+      tracker.track();
+      return false;
+  }
+  (function() {
+      var wsc = document.createElement('script');
+      wsc.src = document.location.protocol+'//static.woopra.com/js/woopra.js';
+      wsc.type = 'text/javascript';
+      wsc.async = true;
+      var ssc = document.getElementsByTagName('script')[0];
+      ssc.parentNode.insertBefore(wsc, ssc);
+  })();
+  </script>
+<!-- ===========================================================================
+END MY STATS 
+</body>
+</html>
